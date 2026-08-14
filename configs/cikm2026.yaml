@@ -1,0 +1,17 @@
+model: "meta-llama/Meta-Llama-3-8B"
+data_path: "/path/to/train.csv"
+output_dir: "outputs/"
+
+epochs: 4
+samples_per_task: 9500
+max_length: 512
+per_device_batch_size: 1
+gradient_accumulation_steps: 48
+learning_rate: 2e-5
+
+lora_r: 64
+lora_alpha: 128
+
+eval_max_samples: 60
+
+seed: 42

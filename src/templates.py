@@ -1,0 +1,40 @@
+TEMPLATE_POOLS = {
+    "Clinical Diagnosis": [
+        "Based on these symptoms, provide ONLY the medical diagnosis as a single term with no additional text:\n{input_text}\nDiagnosis: ",
+        "Return ONLY the specific medical condition name that matches these symptoms without including explanations or formatting:\n{input_text}\nMedical Condition: ",
+        "What single medical condition best explains these symptoms? Provide only the name of the condition:\n{input_text}\nCondition Name: ",
+        "Based on the following symptoms, recommend ONLY the appropriate lab test:\n{input_text}\nLab Test: ",
+        "From the described presentation, identify ONLY the primary diagnosis without adding any interpretation:\n{input_text}\nDiagnosis: ",
+        "Identify the most likely disease based on the symptoms provided. Output ONLY the disease name:\n{input_text}\nDisease: ",
+        "Given these clinical features, state ONLY the single diagnostic term that applies:\n{input_text}\nDiagnosis: ",
+        "Determine the condition suggested by these symptoms and return only the condition name:\n{input_text}\nCondition: ",
+        "From the description, identify the medical condition that best fits. Respond with ONLY the condition name:\n{input_text}\nDiagnosis: ",
+        "Based on the patient presentation, output ONLY the clinical diagnosis in one term, without extra explanation:\n{input_text}\nDiagnosis: ",
+    ],
+    "Clinical Reasoning": [
+        "Analyze this clinical case step by step, explaining your reasoning process, then provide your final assessment:\n{input_text}\nReasoning:",
+        "For the following clinical scenario, first explain your reasoning process, then provide your conclusion:\n{input_text}\nReasoning:",
+        "Provide medical reasoning for this case, explaining the underlying mechanisms and concluding with your assessment:\n{input_text}\nReasoning:",
+        "Apply medical reasoning to analyze this clinical scenario. First explain your thought process, then provide your conclusion:\n{input_text}\nReasoning:",
+        "Examine this clinical case systematically, detailing your diagnostic reasoning and presenting your final medical assessment:\n{input_text}\nReasoning:",
+        "Evaluate the following patient scenario by outlining your diagnostic reasoning in detail. Discuss possible differentials before giving your final conclusion:\n{input_text}\nReasoning:",
+        "Work through this clinical case step by step, highlighting the key findings and your logical reasoning process, then summarize your final assessment:\n{input_text}\nReasoning:",
+        "Interpret this case using clinical reasoning. Explain the underlying pathophysiology guiding your thought process and provide your concluding assessment:\n{input_text}\nReasoning:",
+        "Approach this patient presentation systematically. Describe your reasoning process, including consideration of alternative explanations, and conclude with your final impression:\n{input_text}\nReasoning:",
+        "Analyze this case thoroughly by applying evidence-based clinical reasoning. Explain your thought process step by step and provide your overall conclusion:\n{input_text}\nReasoning:",
+    ],
+    "Medical Question Answering": [
+        "Answer this medical question concisely and accurately based on medical knowledge:\n{input_text}\nAnswer: ",
+        "Provide a direct, factual answer to this medical question:\n{input_text}\nOutput: ",
+        "Respond to this healthcare question with relevant medical information:\n{input_text}\nResponse: ",
+        "List the common symptoms associated with this medical condition:\n{input_text}\nSymptoms: ",
+        "What are the clinical manifestations of this condition? Provide the main symptoms:\n{input_text}\nClinical Manifestations: ",
+        "How is this condition diagnosed? List the key diagnostic criteria:\n{input_text}\nDiagnosis: ",
+        "What tests or assessments are used to confirm this diagnosis?\n{input_text}\nDiagnostic Tests: ",
+        "What is the treatment for this condition?\n{input_text}\nTreatment: ",
+        "How can a patient self-manage this condition at home?\n{input_text}\nSelf-Management: ",
+        "Provide a concise summary of how this condition is treated and monitored:\n{input_text}\nManagement: ",
+    ],
+}
+
+TASKS = list(TEMPLATE_POOLS.keys())
