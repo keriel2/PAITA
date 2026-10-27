@@ -79,6 +79,30 @@ always matches the template that generated it.
 - Evaluation is memory-intensive, so a small number of examples were used
   for validation during training..
 
+
 ## Citation
 
-If you use this code, please cite the CIKM 2026 paper. 
+If you use this code, please cite the CIKM 2026 paper:
+
+Henry Mukalazi Serugunda, Ouyang Jianquan, and Jacob Katende. 2026.
+Performance-Adaptive Instruction-Template Assignment for Clinical Reasoning
+in Large Language Models. In *Proceedings of the 35th ACM International
+Conference on Information and Knowledge Management (CIKM '26)*,
+November 7–11, 2026, Rome, Italy. ACM, New York, NY, USA, 3760–3769.
+https://doi.org/10.1145/3799682.3840978
+
+```bibtex
+@inproceedings{serugunda2026paita,
+  author    = {Serugunda, Henry Mukalazi and Ouyang, Jianquan and Katende, Jacob},
+  title     = {Performance-Adaptive Instruction-Template Assignment for Clinical Reasoning in Large Language Models},
+  booktitle = {Proceedings of the 35th ACM International Conference on Information and Knowledge Management},
+  series    = {CIKM '26},
+  year      = {2026},
+  pages     = {3760--3769},
+  location  = {Rome, Italy},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3799682.3840978},
+  url       = {https://doi.org/10.1145/3799682.3840978}
+}
+```
